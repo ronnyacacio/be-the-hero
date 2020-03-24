@@ -1,9 +1,8 @@
 const express = require("express");
+const routes = express.Router();
 
-const app = express();
-
-app.get("/", (req, res) => {
+routes.get("/", (req, res) => {
   return res.json({ event: "Semana OmniStack 11.0" });
 });
 
-app.listen(3333);
+module.exports = routes;
