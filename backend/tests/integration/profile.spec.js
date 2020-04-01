@@ -16,5 +16,7 @@ describe("Profile", () => {
     const response = await request(app)
     .get("/profile")
     .set("authorization", "050714b7")
+
+    expect(response.body);
   });
 });
